@@ -93,6 +93,7 @@ footer {
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 p{
@@ -193,5 +194,9 @@ h3{
 }
 
 li{
+    color: white;
+}
+
+label{
     color: white;
 }

@@ -94,8 +94,6 @@ footer {
 a{
     text-decoration: none;
     color: white;
-    margin-right: 7%;
-    margin-left: 7%;
 }
 
 p{
@@ -182,4 +180,5 @@ input[type="submit"]:hover {
 
 .xmrbazaar{
     color: #0077ff
+    text-decoration: center;
 }

@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardpad - Hardened Thinkpads</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="pictures/logo.png" alt="Logo" class="logo">
+        </div> 
+        <h1>Hardpad - Hardened Thinkpads</h1>
+        <h2>(To buy, send us an email with PGP)</h2>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="how-to-use-pgp.html">How to use PGP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Comprehensive Guide to Using GPG for Encryption</title>
+        </head>
+        <body>
+        
+        <h1>Comprehensive Guide to Using GPG for Encryption</h1>
+        
+        <p>This tutorial will guide you through the process of using GPG (GNU Privacy Guard) for encrypting and decrypting messages on Linux. GPG is a powerful tool that allows you to send encrypted messages securely. This guide will cover installation, key management, message encryption, decryption, and even sending images securely.</p>
+        
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#what-is-gpg">What is GPG?</a></li>
+            <li><a href="#step-1-install-gpa">Step 1: Install GPA</a></li>
+            <li><a href="#step-2-creating-your-keys">Step 2: Creating Your Keys</a></li>
+            <li><a href="#step-3-importing-a-contact">Step 3: Importing a Contact</a></li>
+            <li><a href="#step-4-encrypting-a-message">Step 4: Encrypting a Message</a></li>
+            <li><a href="#step-5-decrypting-a-message">Step 5: Decrypting a Message</a></li>
+            <li><a href="#step-6-testing-message-sending">Step 6: Testing Message Sending</a></li>
+            <li><a href="#step-7-sending-images-with-gpg">Step 7: Sending Images with GPG</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+        
+        <h2 id="what-is-gpg">What is GPG?</h2>
+        <p>GPG is a free implementation of the OpenPGP standard, allowing you to encrypt and sign your data and communications. It features a versatile key management system and is widely used for secure communication.</p>
+        
+        <h2 id="step-1-install-gpa">Step 1: Install GPA</h2>
+        <p>To use GPG effectively, you will need to install GPA (GNU Privacy Assistant), a graphical frontend for GnuPG.</p>
+        
+        <h3>Installation Instructions</h3>
+        <ol>
+            <li>Open your terminal.</li>
+            <li>Depending on your Linux distribution, use the appropriate package manager. For example, on Arch Linux, you can use:
+                <pre>paru -S gpa</pre>
+            </li>
+            <li>If you are using a graphical installer, simply search for "gpa" and install it.</li>
+        </ol>
+        
+        <h2 id="step-2-creating-your-keys">Step 2: Creating Your Keys</h2>
+        <p>Once GPA is installed, you need to create your GPG keys.</p>
+        
+        <h3>Key Types</h3>
+        <ul>
+            <li><strong>Public Key</strong>: This key is like your email address. You can share it publicly, and others can use it to send you encrypted messages.</li>
+            <li><strong>Private Key</strong>: This key is like your password. <strong>Never share this key</strong>. It is used to decrypt messages sent to you.</li>
+        </ul>
+        
+        <h3>Creating Your Keys</h3>
+        <ol>
+            <li>Open GPA.</li>
+            <li>Right-click on your username and select "Generate Key".</li>
+            <li>Fill in the required information (name, email, etc.). This information will be visible to others.</li>
+            <li>After generating the keys, <strong>export your public key</strong> by right-clicking your username and selecting "Export Keys". Save it to a text file.</li>
+            <li><strong>Copy your private key</strong> by right-clicking your username and selecting "Copy Private Key". Store it securely.</li>
+        </ol>
+        
+        <h3>Important Note</h3>
+        <p>Save your private key in a secure location. Consider using a password manager like <strong>KeePassXC</strong> to store your keys and passwords securely.</p>
+        
+        <h2 id="step-3-importing-a-contact">Step 3: Importing a Contact</h2>
+        <p>To communicate securely, you need to import the public key of the person you want to contact.</p>
+        
+        <h3>Importing a Key</h3>
+        <ol>
+            <li>Obtain the public key from your contact (e.g., from a website or directly).</li>
+            <li>Save the
+                public key to a text file (e.g., <code>contact_key.txt</code>).</li>
+                <li>In GPA, click the arrow icon (import keys) and select the file containing the public key.</li>
+            </ol>
+            
+            <h2 id="step-4-encrypting-a-message">Step 4: Encrypting a Message</h2>
+            <p>Now that you have your keys set up, you can encrypt messages.</p>
+            
+            <h3>Steps to Encrypt</h3>
+            <ol>
+                <li>Click the clipboard icon in GPA to open the clipboard.</li>
+                <li>Type your message in the clipboard.</li>
+                <li>Click the envelope icon that says "Encrypt the buffer".</li>
+                <li>Select the recipient's public key from the list.</li>
+                <li>After encryption, you will receive a long string of text. This is your encrypted message.</li>
+            </ol>
+            
+            <h3>Important Reminder</h3>
+            <p>If you are contacting someone for the first time, include your public key in the message so they can respond securely.</p>
+            
+            <h2 id="step-5-decrypting-a-message">Step 5: Decrypting a Message</h2>
+            <p>When you receive an encrypted message, you will need to decrypt it.</p>
+            
+            <h3>Steps to Decrypt</h3>
+            <ol>
+                <li>Open GPA and click the clipboard icon.</li>
+                <li>Paste the encrypted message into the clipboard.</li>
+                <li>Click the envelope icon that says "Decrypt the buffer text".</li>
+                <li>Enter your private key when prompted. This is safe as it only authenticates you.</li>
+            </ol>
+            
+            <h2 id="step-6-testing-message-sending">Step 6: Testing Message Sending</h2>
+            <p>You can test sending a message using GPG.</p>
+            
+            <h3>Test Message</h3>
+            <ol>
+                <li>Use the public key provided by your contact (e.g., <code>example@example.com</code>).</li>
+                <li>Send a test message and specify if you want a response to confirm it worked.</li>
+            </ol>           
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Hardpad - Hardened Thinkpads</p>
+    </footer>
+</body>
+</html>

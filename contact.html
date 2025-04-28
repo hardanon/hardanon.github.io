@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardpad - Hardened Thinkpads</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="pictures/logo.png" alt="Logo" class="logo">
+        </div> 
+        <h1>Hardpad - Hardened Thinkpads</h1>
+        <h2>(To buy, send us an email with PGP)</h2>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="how-to-use-pgp.html">How to use PGP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+        <p>Please encrypt your message using PGP before sending it.</p>
+        <p>Our public PGP key:</p>
+        <p>(public key to add)</p>
+        
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Username:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+        
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" required><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            
+            <input type="submit" value="Send Email">
+        </form>      
+    
+        <h3>PGP Instructions</h3>
+        <p>To send a secure message:</p>
+        <ol>
+            <li>Download and install a PGP-compatible email client or tool.</li>
+            <li>Import my public PGP key from the link above.</li>
+            <li>Compose your message and encrypt it using my public key.</li>
+            <li>Copy the encrypted message into the "Message" field above.</li>
+            <li>Fill in your email, and subject, then click "Send Email".</li>
+            <li>For more details, read: <a class="a-about" href="how-to-use-pgp.html">How to use PGP.</a></li>
+        </ol>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2025 - Hardpad - Hardened Thinkpads</p>
+    </footer>
+</body>
+</html>

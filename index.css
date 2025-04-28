@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+}
+
+main {
+    flex: 1; /* Allow the main section to grow and take available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+}
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative; /* Position relative for stacking context */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    background: rgb(31, 31, 31);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background: #28a745;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+.cart {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: rgb(31, 31, 31);;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+.logo-container {
+    position: relative; /* Position the logo absolutely within the header */
+    top: 10px; /* Adjust the top position */
+    right: 10px; /* Adjust the right position */
+}
+
+.logo {
+    max-width: 100%; /* Ensure the logo is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.show {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* This will maintain the aspect ratio and cover the area */
+}
+
+h1{
+    text-align: center;
+}
+
+span{
+    text-align: center;
+    margin-right: 7%;
+    margin-left: 7%;
+    margin-bottom: 5%;
+}
+
+img{
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; 
+}
+
+.a-about{
+    color: #0077ff;
+}
+
+.a-about:hover{
+    text-decoration: underline;
+}
+
+form {
+    padding: 20px; /* Add some padding */
+    border-radius: 8px; /* Rounded corners */
+}
+
+input, textarea {
+    background-color: #333; /* Dark background for inputs */
+    color: white; /* White text color */
+    border: 1px solid #555; /* Border color */
+    border-radius: 4px; /* Rounded corners for inputs */
+    padding: 10px; /* Padding inside inputs */
+    width: 100%; /* Full width */
+    margin-bottom: 10px; /* Space between inputs */
+}
+
+input[type="submit"] {
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker button on hover */
+}

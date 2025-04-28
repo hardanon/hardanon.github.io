@@ -93,7 +93,6 @@ footer {
 
 a{
     text-decoration: none;
-    color: white;
 }
 
 p{
@@ -188,5 +187,9 @@ input[type="submit"]:hover {
 }
 
 h3{
+    color: white;
+}
+
+li{
     color: white;
 }

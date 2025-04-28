@@ -184,6 +184,10 @@ input[type="submit"]:hover {
     margin-top: 5%;
 }
 
+.xmrbazaar:hover{
+    text-decoration: underline;
+}
+
 h3{
     color: white;
 }

@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #333;
-    color: white;
     display: flex;
     flex-direction: column;
     margin-right: 7%;
@@ -173,4 +172,8 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #0056b3; /* Darker button on hover */
+}
+
+.xmrbazaar{
+    color: #0077ff
 }

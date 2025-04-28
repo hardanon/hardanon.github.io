@@ -177,12 +177,13 @@ input[type="submit"]:hover {
 }
 
 .xmrbazaar{
-    color: #0077ff
+    color: blue;
     text-align: center;
     font-size: 1.5em; /* Adjusts the font size */
     font-weight: bold; /* Makes the text bold */
     margin: 1em 0; /* Adds vertical spacing */
     line-height: 1.2; /* Adjusts the line height */
+    margin-top: 5%;
 }
 
 h3{
